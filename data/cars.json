@@ -1,0 +1,25 @@
+[{
+	"name": "VW Golf R",
+	"rate": 30345,
+	"avaliable": true,
+	"thumb": "images/golf.jpg",
+	"description": "There was a time when the hot hatch was a simpler affair; you had your standard hatchback range models, and then a hot range-topping version. These days that’s not enough, because the VW Golf has its iconic hot GTI, and this even more potent Golf R."
+}, {
+	"name": "Nissan GTR",
+	"rate": 79870,
+	"avaliable": true,
+	"thumb": "images/gtr.png",
+	"description": "The Nissan GT-R is a 2-door 2+2 high performance vehicle produced by Nissan unveiled in 2007.  It is the successor to the Nissan Skyline GT-R although no longer part of the Skyline range itself, the name having been given over to the R35 Series and having since left its racing roots."
+}, {
+	"name": "BMW M3",
+	"rate": 59905,
+	"avaliable": true,
+	"thumb": "images/m3.jpg",
+	"description": "The BMW M3 is a high-performance version of the 3 Series, developed by BMW's in-house motorsport division. M3 models have been derived from the E30, E36, E46, E90/E92/E93 and F80 3 Series models."
+}, {
+	"name": "Audi RS6",
+	"rate": 81470,
+	"avaliable": true,
+	"thumb": "images/rs6.jpg",
+	"description": "With a price tag of £80,000+, the Audi RS6 Avant is one of the most expensive estate cars you can buy. But when you consider the supercar-rivalling performance on offer and the practical estate car body, it offers two cars for the price of one, and you could easily spend twice as much buying an R8 sports car for thrills and a luxury SUV to go with it."
+}]

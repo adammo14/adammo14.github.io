@@ -1,0 +1,28 @@
+  <div class="content">
+    <div class="input-group">
+      <input type="text" ng-model="search" placeholder="Search Cars"/>
+      <span class="input-group-btn">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle sort" type="button" data-toggle="dropdown">Sort Cars<span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a ng-click="order='name'">Name</a></li>
+            <li><a ng-click="order='rate'">Price</a></li>
+          </ul>
+        </div>
+      </span>
+    </div>
+    <ul id="car-list" style="list-style-type: none;">
+      <li ng-repeat="car in cars | orderBy: order | filter: search" ng-show="car.avaliable">
+        <img class="img-responsive" ng-src="{{car.thumb}}" style="width: 100%; border-radius: 5px;" ng-show="car.thumb"/>
+        <h3>{{car.name}} - {{car.rate | currency: '£'}}</h3><br><br>
+        <p style="display: block;">{{car.description}}</p>
+        <button class="remove btn btn-danger" ng-click="removeCar(car)" type="button">REMOVE</button>
+      </li>
+    </ul>
+    <form ng-submit="addCar()">
+      <input type="text" placeholder="name" ng-model="newCar.name"/>
+      <input type="text" placeholder="rate" ng-model="newCar.rate"/>
+      <input type="text" placeholder="description" ng-model="newCar.description"/>
+      <input type="submit" value="Add Car"/>
+    </form>
+  </div>
